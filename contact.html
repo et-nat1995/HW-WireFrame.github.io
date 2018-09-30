@@ -14,7 +14,7 @@
         <div class="container">
             <a href="index.html" id="logo">Tamir Natanov</a>
             <nav>
-                <a href="about.html">About</a>
+                <a href="index.html">About</a>
                 <a href="portfolio.html">Portfolio</a>
                 <a href="contact.html">Contact</a>
             </nav>
@@ -22,13 +22,22 @@
     </header>
     <div id="main-container" class="container">
         <section class="main-section">
-            <form>
-                First Name:
-                <input type="text" name="firstname">
-                <br>
-                Email:
-                <input type="text" name=lastName>
-
+            <form id ="conact-form">
+                <ul>
+                    <li>
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="John Smith" required="required">
+                    </li>
+                    <li>
+                        <label for="email">Email</label>
+                        <input type="email" name="emial" id="email" placeholder="example@gmail.com" required="required">
+                    </li>
+                    <li>
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" required="required"></textarea>
+                    </li>
+                </ul>
+                <input type="submit" value="Submit">
             </form>
         </section>
     </div>
